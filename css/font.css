@@ -1,0 +1,22 @@
+@font-face {
+  font-family: interBold;
+  src: url(fonts/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: interReg;
+  src: url(fonts/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: lexendReg;
+  src: url(fonts/LexendDeca-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: lexendThin;
+  src: url(fonts/LexendDeca-Thin.ttf);
+}

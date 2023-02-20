@@ -1,0 +1,147 @@
+@import url(font.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --white-text: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-paragraph: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  font-size: 15px;
+  font-family: interReg;
+  background-color: var(--main-background);
+  color: var(--white-text);
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main {} */
+
+.stats-preview-card {
+  background-color: var(--card-background);
+  overflow: hidden;
+  max-width: 75%;
+}
+
+.img-container {
+  background-color: var(--accent);
+}
+
+.mobile-img {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.stats-content {
+  text-align: center;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.stats-content .stat-preview-title {
+  font-family: interBold;
+  font-size: 1.6rem;
+  line-height: 1.3em;
+}
+
+.stats-content .stat-preview-title span {
+  color: var(--accent);
+}
+
+.stats-content .stat-preview-paragraph {
+  color: var(--main-paragraph);
+  line-height: 1.5;
+
+}
+
+.stats-content .stats-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1.5em;
+}
+
+.stats-content .stats-list .number {
+  font-family: interBold;
+  font-size: 1.4rem;
+}
+
+.stats-content .stats-list .number-desc {
+  font-family: lexendReg;
+  margin-top: .5em;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--stat-paragraph);
+}
+
+/* Media Queries */
+
+@media (min-width: 1440px) {
+  .stats-preview-card {
+    display: flex;
+  }
+
+  .img-container {
+    flex: 1 1 50%;
+    order: 2;
+  }
+
+  .stats-content {
+    padding: 5em 5em 4em 5em;
+    text-align: left;
+    flex: 1 1 50%;
+  }
+
+  .stats-content .stat-preview-title {
+    font-size: 2.2rem;
+  }
+
+  .stats-content .stats-list {
+    flex-direction: row;
+    margin-top: auto;
+    max-width: 90%;
+  }
+}
+
+
+
+/* footer */
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
